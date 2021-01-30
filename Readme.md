@@ -14,11 +14,11 @@ Install Pyusb with ... sudo apt-get install python3-usb
 
 Install RPi.GPIO with ... sudo apt-get install rpi.gpio
 
-Copy midiconnect.service to ... /etc/systemd/sytem/ (ensure logged in as root for permissions)
+Copy midiconnect.service to ... /etc/systemd/sytem/ ... (ensure logged in as root for permissions)
 
 Enable service at boot using ... sudo systemctl enable midiconnect.service ... from command line.
 
-Copy midi-connect.py to /home/pi/
+Copy midi-connect.py to /home/pi/ ... (ensure file has root ownership, otherwise it will throw exceptions)
 
 Reboot ... Good Luck
 
