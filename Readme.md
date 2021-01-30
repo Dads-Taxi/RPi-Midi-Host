@@ -1,6 +1,6 @@
 Raspberry Pi as a USB Midi Host for Yamaha DGX-520 Electronic Piano
 
-A Raspberry Pi running Raspbian can be configured as a USB Midi host, using the ALSA utilities to connect Midi enabled devices to each other. There are many websites detailing the necessary steps if you Google it.
+A Raspberry Pi running Raspbian can be configured as a USB Midi host, using the ALSA utilities to connect Midi enabled devices to each other. There are many websites detailing the necessary steps.
 
 The main problem with this method is that the Yamaha DGX-520 works for a few seconds, and then the Midi Interface locks up, requiring a reboot to re-enable it. This project is an alternative based on many hours of experimentation. It connects two USB Midi devices as inputs to the DGX-520 (no output required), and appears very reliable. The code is probably not the most efficient or pretty, soz, but it may provide ideas for a similar project.
 
