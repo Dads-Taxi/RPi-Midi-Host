@@ -6,7 +6,7 @@ The main problem with this method is that the Yamaha DGX-520 works for a few sec
 
 The code is written in Python3, and is installed as a background service to auto-run at RPi startup.
 
-The Raspberry Pi is an early model, with two USB ports, and wired Ethernet. It is running Raspbian Buster Lite (headless). It hijacks the built in ACT LED to show the running status, and has a pushbutton connected to a GPIO to trigger hardware detection, and a method for SD safe shutdown.
+The Raspberry Pi is an early model (two USB ports, wired Ethernet) running Raspbian Buster Lite (headless). It is intended to run with no monitor or ethernet connected, so the built in ACT LED is hijacked to show the running status, and there is a pushbutton connected to GPIO to trigger hardware detection, and a method for SD safe shutdown.
 
 INSTALLATION:-
 
