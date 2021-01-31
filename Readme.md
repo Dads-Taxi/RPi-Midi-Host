@@ -6,7 +6,7 @@ The main problem with this method is that the Yamaha DGX-520 works for a few sec
 
 The code is written in Python3, and is installed as a background service to auto-run at RPi startup.
 
-The Raspberry Pi is an early model, with two USB ports, and wired Ethernet. It is running Raspbian Buster Lite (headless). It hijacks the built in ACT LED to show the running status, and has a pushbutton connected to GPIO to trigger hardware detection, and a method for SD safe shutdown.
+The Raspberry Pi is an early model, with two USB ports, and wired Ethernet. It is running Raspbian Buster Lite (headless). It hijacks the built in ACT LED to show the running status, and has a pushbutton connected to a GPIO to trigger hardware detection, and a method for SD safe shutdown.
 
 INSTALLATION:-
 
@@ -18,8 +18,8 @@ Copy midiconnect.service to ... /etc/systemd/sytem/ ... (ensure logged in as roo
 
 Enable service at boot using ... sudo systemctl enable midiconnect.service ... from command line.
 
-Copy midi-connect.py to /home/pi/ ... (ensure file has root ownership, otherwise it will throw exceptions)
+Copy midi-connect.py to /home/pi/ ... (ensure file has root ownership, otherwise it will throw permission exceptions)
 
 Reboot ... Good Luck
 
-The Arduino is a Uno clone connected to an old Wii Drums game pad. The drum pad piezo transducers are connected to the Arduino A/D converter. The Uno USB Interface uController has been re-flashed with the MocoLUFA dual Midi/Serial firmware. The code for this project will be placed in a seperate repository (eventually).
+The Arduino mentioned in the code is a Uno clone connected to an old Wii Drums game pad. The drum pad piezo transducers are connected to the Arduino A/D converter. The Uno USB Interface uController has been re-flashed with the MocoLUFA dual Midi/Serial firmware. The code for this project will be placed in a seperate repository (eventually).
